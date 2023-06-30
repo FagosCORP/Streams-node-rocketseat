@@ -28,6 +28,8 @@ class InverseNumberStream extends Transform {
     const transformed = Number(chunk.toString()) * -1
 
     callback(null, Buffer.from(String(transformed)))
+    // primeiro parametro e um erro, segundo parametro e transformacao e conversao.
+
   }
 }
 
